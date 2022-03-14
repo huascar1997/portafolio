@@ -114,6 +114,7 @@ nav.contact > div.icon-contact > p > svg{
 nav.contact > div.icon-contact{
     position: relative;
     top: 67%;
+    background: #100f0f;
 }
 nav.contact > div.icon-contact > p{
     transition: 300ms;
