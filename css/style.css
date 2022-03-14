@@ -6,13 +6,14 @@
    --color-red: rgb(226, 13, 66);
    --color-cafe: #5a5656;
    --font1: 'Montserrat', sans-serif;
-   --font-default: 'Poppins', sans-serif;
+   --font-defaul: 'Poppins', sans-serif;
 
 }
 *{
     margin: 0;
     padding: 0;
-    font-family: var(--font-default);
+    font-family: var(--font-defaul
+    );
 }
 body{
     width: 100%;
