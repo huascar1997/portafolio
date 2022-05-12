@@ -80,11 +80,12 @@ div.icon > h2::first-letter{
     text-transform: capitalize;
     
 }
+div.name{
+    display: flex;
+}
 div.presentacion{
-    position: relative;
-    transform: translate(80px,311px);
-    font-size: 40px;
-    width: 40%;
+    font-size: 25px;
+    margin: 100px
 }
 div.presentacion > h1{
     padding: 5px;
@@ -103,17 +104,20 @@ nav.contact{
     height: 100vh;
     background: #100f0f;
 }
-nav.contact > div.icon-contact > p > svg{
-    background: transparent;
+nav.contact > div.icon-contact > p {
+    
     padding: 25px;
-    width: 25px;
-    height: 25px;
     color:  var(--color-red);
+    margin: 0;
 
 } 
+nav.contact > div.icon-contact > p > svg {
+    background: transparent;
+    width: 25px;
+    height: 25px;
+}
 nav.contact > div.icon-contact{
     position: relative;
-    top: 67%;
     background: #100f0f;
 }
 nav.contact > div.icon-contact > p{
@@ -160,10 +164,7 @@ nav.contact > div.icon-contact > p:hover{
     color: var(--color-white);
 
 }
-section#inicio{
-    display: flex;
-    justify-content: space-between;
-}
+
 div#formulario{
     display: none;
     position: relative;
