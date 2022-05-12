@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&family=Source+Sans+Pro:wght@200&display=swap');
+:root{
+    --color-grisazul :  #1e1d24;
+    --letra-white: #fff;
+    --color-azul: #347fc4;
+    --color-fondo: #1e1d24;
+    --color-black: black;
+    --color-red:#e20d42;
+   --color-blue : #00ffb8;
+   --color-gris: #464242;
+   --color-gradient:linear-gradient(to right, var(--color-azul), var(--color-red));
+
+}
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: default;
+}
+html{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+body{   
+    margin: 0;
+}
+#github{
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    background: #e91e63;
+    top: -23px;
+    left: -77px;
+    transform: rotate(45deg);
+    
+}
+#github > a> svg{
+    position: fixed;
+    top: 53px;
+    left: 93px;
+    transform: rotate(-46deg);
+    transition: 500ms;
+    cursor: pointer;
+}
+#github > a> svg:hover{
+    width: 50px;
+    height: 50px;
+}
+nav.navegador{
+    z-index: 15;
+   height: 54px;
+   display: flex;
+   position: fixed;
+   min-width: 100%;
+   justify-content: space-between;    
+   background: var(--color-grisazul);
+   align-items: center;
+
+  
+}
+nav.navegador > h2.icon{
+    padding: 5px;
+    color: var(--letra-white);
+    font-size: 16px;
+    cursor: pointer;
+}
+nav.navegador > h2.icon::first-letter{
+    color: var(--color-red);
+    font-size: 24px;
+}
+nav.navegador > ul.parts{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.navegador > ul.parts > li > a{
+    text-decoration: none;
+    color: var(--letra-white);
+    padding: 17px;
+    transition: 1s all ease;
+    cursor: pointer;
+    border: var(--color-azul);
+}
+nav.navegador > ul.parts > li > a:hover{
+    border-bottom: 1px  var(--color-azul) solid;
+    color: white;
+
+}
+svg.fondosvg{
+    position: relative;
+    height: 100vh;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(1,2fr 1fr);
+    grid-template-rows: repeat(1,100%);
+    min-height: 100vh;
+    background: var(--color-fondo);
+}
+header > div.info > .text >h1{
+    color: var(--color-red);
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+} 
+header > div.info > .text > h1 > span{
+    color: var(--color-gris);
+    font-size: 20px;
+}
+header > div.info > .text{
+   position: absolute;
+   top: 30%;
+   left: 10%;
+}
+
+header > div.info{
+    height: 100%;
+    width: 100%;
+    transform: translate(50%, 50%);
+} 
+button.contact-me{
+    color: var(--color-blue);
+    border-radius: 0px;
+    border: 2px solid var(--color-blue);
+    background: transparent;
+    padding: 10px;
+    transition: all 1s;
+    cursor: pointer;
+    font-size: 16px;
+}
+button.contact-me:hover{
+    background: var(--color-blue);
+    color: var(--letra-white);
+}
+div.correo{
+    transition: all 2s;
+    overflow: auto;  
+}
+ul.redes{
+    position: fixed;
+    bottom: 40%;
+}
+ul.redes > ul{
+    list-style: none;
+    color: blue;
+}
+ul.redes > ul > li {
+    background: transparent;
+    
+}
+ul.redes > ul > li > svg{
+    padding: 8px;
+    margin-bottom: 8px;
+    background: aliceblue;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 1s;
+    border: var(--color-red);
+}
+div.redes > ul > li > svg:hover{
+    border: var(--color-red);
+}
+div.infod{
+    padding: 70px;
+    background: var(--color-fondo);
+    text-align: center
+}
+div.infod > h2{
+    padding-bottom: 5px;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    text-decoration:underline var(--color-azul) 3px;
+    font-size: 30px;
+    color: var(--letra-white)
+}
+div.infod > p{
+    margin:0;
+    color: var(--letra-white);
+    font-size: 25px;
+}
+div.infod > svg{
+    width: 550px;
+    height: 310px;
+    position: absolute;
+    transform: translate(-13px, 300px);
+}
+section#infor{
+    display: grid;
+    grid-template-columns: repeat(1, 0.5fr 1fr);
+    height: calc(100vh - 7vh);
+}
+div.habilidades > h2{
+    text-align: center;
+    text-decoration: overline var(--color-gradient) 5px;
+}
+div.habilidades > ul{
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    transition: all 500ms  ;
+    cursor: pointer;
+    padding: 0;
+}
+div.habilidades > ul > li {
+    text-align: center;
+    align-items: center;
+    width: 220px;
+    border: 4px solid;
+   
+    color: var(--color-black);
+    padding: 5px;
+    font-size: large;
+    font-family: sans-serif;
+    transition: all 500ms;
+    margin: 20px;
+    
+}
+div.habilidades > ul > li > p{
+    font-family: 'Inconsolata', monospace;
+}
+div.habilidades > ul > li:nth-child(1) > p::first-letter{
+    
+    color: #e20d42;
+    font-size: 40px;
+    
+}
+div.habilidades > ul > li:nth-child(2) > p::first-letter{
+    color: var(--color-azul);
+    font-size: 40px;
+} 
+div.habilidades > ul > li:nth-child(3) > p::first-letter{
+    color: #ffd000;
+    font-size: 40px;
+}
+
+div.habilidades > ul > li:nth-child(1):hover{ 
+    border-radius: 0px 0px 1px 45px;
+    border-top: #9fcaf1e6  4px solid; 
+    -webkit-box-shadow: 13px 37px 0px 3px rgba(226,13,66,0.81);
+    -moz-box-shadow: 13px 37px 0px 3px rgba(226,13,66,0.81);
+    box-shadow: 13px 37px 0px 3px rgba(226,13,66,0.81);
+}
+div.habilidades > ul > li:nth-child(2):hover{
+    border-radius: 0px 0px 1px 45px;
+    border-top: #9fcaf1e6  4px solid; 
+    -webkit-box-shadow: 13px 37px 0px 3px var(--color-azul);
+    -moz-box-shadow: 13px 37px 0px 3px var(--color-azul);
+    box-shadow: 13px 37px 0px 3px var(--color-azul);
+} 
+div.habilidades > ul > li:nth-child(3):hover{
+    border-radius: 0px 0px 1px 45px;
+    border-top: #9fcaf1e6  4px solid; 
+    -webkit-box-shadow: 13px 37px 0px 3px #ffd000;
+    -moz-box-shadow: 13px 37px 0px 3px #ffd000;
+    box-shadow: 13px 37px 0px 3px #ffd000;
+}
+.form{
+    padding: 20px;
+    background: #fff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.form > input{
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    border-bottom: 2px solid var(--color-azul);
+    background: transparent;
+    color: var(--color-red);
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+}
+.form >textarea{
+    padding: 5px;
+    border: 0;
+    background: #1e1d24;
+    color: #fff;
+
+}
+form.form > button.botonenviar{
+    color: var(--letra-white);
+    border-radius: 0px;
+    border: 0;
+    background: #1a64a8;
+    margin-top: 5px;
+    padding: 15px;
+    transition: all 1s;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+ul.redes{
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    left: -20%;
+   
+}
+ul.animacion-redes{
+    opacity: 1;
+    position: absolute;
+    top: 55%;
+    left: -20%;
+}
+ul.redes > li {
+    list-style: none;
+    padding-bottom: 40px;
+
+}
+ul.redes > li > svg{
+    position: relative;
+    cursor: pointer;
+    transition: 250ms;
+}
+ul.redes > li > svg:hover{
+    width: 35px;
+    height: 35px;
+}
+.animacion{
+    opacity: 1;
+}
+a.showmore{
+    position: absolute;
+    left: 95%;
+    color: var(--color-red);
+    font-size: 16px;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    cursor: pointer;
+}
+a.showmore:hover{
+    text-decoration: underline;
+
+}
+
+
